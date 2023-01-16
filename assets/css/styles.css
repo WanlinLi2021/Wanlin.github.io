@@ -1,0 +1,35 @@
+img {
+    width: 300px;
+    height: 300px;
+
+}
+
+.photo-grid-container{
+
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*   Adding the following flex-wrap property forces items that don’t fit
+                        to get bumped down to the next row */
+.photo-grid-item {
+    border: 1px solid #5995DA;
+    width: 300px;
+    height: 300px;
+}
+
+.first-item {
+    order: -1;
+}
+.last-item {
+    order: 1;
+}
